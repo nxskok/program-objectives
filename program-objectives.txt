@@ -1,0 +1,21 @@
+Basic statistical methods (eg. t-tests)
+  knows how to run by hand (when specified)
+  knows how to run with software
+  knows how to interpret software output
+  knows theory behind
+Intermediate statistical methods (eg. regression, ANOVA)
+  knows how to run by hand (when specified)
+  knows how to run with software
+  knows how to interpret software output
+  knows theory behind
+Advanced statistical methods (eg. multivariate)
+  knows how to run by hand (when specified)
+  knows how to run with software
+  knows how to interpret software output
+  knows theory behind
+knows how to choose suitable statistical methods
+knows how to communicate findings
+  can write a report
+  can give a clear presentation
+knows how to handle an unfamiliar data set
+understands data cleaning and tidying
