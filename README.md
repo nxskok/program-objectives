@@ -14,7 +14,13 @@ curriculum map for program review in mind.
   - `applied-minor-courses.txt`: a list of (our) courses in the Applied
     Minor program.
 
-## my aims (with R)
+## I need help\!
+
+  - make files like `applied-minor-courses.txt` that contain all the
+    courses you want to include for your program
+  - take a look at my program objectives and suggest changes
+
+## My aims (with R)
 
   - to make a numbered list of program objectives, 1(a), 1(b), 1(c) etc
   - to make a blank curriculum map spreadsheet for each program (once I
