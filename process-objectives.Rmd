@@ -1,0 +1,53 @@
+---
+title: "Read objectives"
+output: html_notebook
+---
+
+## packages
+
+```{r}
+library(tidyverse)
+```
+
+## read file
+
+```{r}
+v <- scan("program-objectives.txt", what="character", sep="\n") 
+initial_pat="^ +"
+matches <- str_extract(v, initial_pat) 
+matches %>% map_int(~str_length(.)) -> lengths
+tibble(obj=v, spaces=lengths) %>% 
+  replace_na(list(spaces=0)) %>% 
+  mutate(level=1+(spaces %/% 2)) %>% 
+  select(-spaces) -> objectives
+objectives
+```
+
+number objectives and sub-objectives
+
+
+
+make counters
+
+```{r}
+n=nrow(objectives)
+part=character(n)
+v=rep(0,3)
+for (i in 1:n) {
+  this_level=objectives$level[i]
+  v[this_level]=v[this_level]+1
+  if (this_level<3) {
+    for (j in (this_level+1):3) {
+      v[j]=0
+    } 
+  }
+  part[i]=str_c(v, collapse=".")
+}
+objectives %>% 
+  mutate(part=str_replace_all(part, ".0","")) %>% 
+  select(part, obj) -> objectives
+objectives %>% mutate(output=str_c(part, obj, sep=" ")) %>% 
+  select(output) %>% 
+  write_csv("objectives_formatted.txt", col_names = F, quote=F)
+```
+
