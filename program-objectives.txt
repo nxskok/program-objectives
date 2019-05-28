@@ -2,6 +2,8 @@ Basic statistical methods (eg. t-tests)
   knows how to run by hand (when specified)
   knows how to run with software
   knows how to interpret software output
+    part A
+    part B
   knows how to assess validity
   knows theory behind
 Intermediate statistical methods (eg. regression, ANOVA)

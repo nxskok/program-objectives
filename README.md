@@ -11,6 +11,8 @@ curriculum map for program review in mind.
   - `program-objectives.txt`: a sketch of some things students ought to
     be able to do by the end of their programs. Indented points are
     subpoints of main points (starting at the beginning of the line).
+    The points labelled Part A and Part B are dummy subpoints to show
+    that you can go three levels deep.
   - `applied-minor-courses.txt`: a list of (our) courses in the Applied
     Minor program.
 
@@ -18,11 +20,21 @@ curriculum map for program review in mind.
 
   - make files like `applied-minor-courses.txt` that contain all the
     courses you want to include for your program
-  - take a look at my program objectives and suggest changes
+  - take a look at my program objectives, in `program-objectives.txt`
+    and suggest changes. Make a pull request (if you know how), or
+    mention it in an Issue (or email me).
+  - if you want to be added as a Collaborator, let me know your Github
+    userid.
+  - the whole thing is an R Studio project, so you can grab your own
+    copy by File - New Project - From Github.
 
 ## My aims (with R)
 
-  - to make a numbered list of program objectives, 1(a), 1(b), 1(c) etc
+  - to make a numbered list of program objectives, 1(a), 1(b), 1(c) etc.
+    This is done
+    [here](https://raw.githubusercontent.com/nxskok/program-objectives/master/objectives_formatted.txt),
+    and will be changed as we add/remove objectives. (The script is
+    [here](https://raw.githubusercontent.com/nxskok/program-objectives/master/process-objectives.Rmd)).
   - to make a blank curriculum map spreadsheet for each program (once I
     have the courses for that program)
 
